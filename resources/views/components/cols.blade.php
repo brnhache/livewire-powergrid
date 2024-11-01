@@ -32,7 +32,7 @@
     style="{{ $column->hidden === true ? 'display:none' : '' }}; width: max-content; @if ($column->sortable) cursor:pointer; @endif {{ data_get($theme, 'table.thStyle') . ' ' . $column->headerStyle }}"
 >
     <div
-        @class(['flex gap-2' => !isBootstrap5(), data_get($theme, 'cols.divClass')])
+        @class([data_get($theme, 'cols.divClass')])
         style="{{ data_get($theme, 'cols.divStyle') }}"
     >
         <span data-value>{!! $column->title !!}</span>
