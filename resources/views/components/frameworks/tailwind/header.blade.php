@@ -5,10 +5,10 @@
             <div>
                 @include(powerGridThemeRoot() . '.header.actions')
             </div>
-            <div class="flex flex-row items-center text-sm flex-wrap justify-center">
+            <div class="flex flex-row items-center text-sm flex-wrap text-center">
                 @if (data_get($setUp, 'exportable'))
                     <div
-                        class="mr-2 mt-2 sm:mt-0"
+                        class="mr-2 mt-2 sm:mt-0 text-center"
                         id="pg-header-export"
                     >
                         @include(powerGridThemeRoot() . '.header.export')
