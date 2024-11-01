@@ -5,7 +5,7 @@
             <div>
                 @include(powerGridThemeRoot() . '.header.actions')
             </div>
-            <div class="flex flex-row items-center text-sm flex-wrap text-center">
+            <div class="text-center">
                 @if (data_get($setUp, 'exportable'))
                     <div
                         class="mr-2 mt-2 sm:mt-0 text-center"

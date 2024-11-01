@@ -35,7 +35,7 @@ class Tailwind extends ThemeBase
             ->th('font-extrabold px-2 pr-4 py-3 text-center text-xs text-pg-primary-700 tracking-wider whitespace-nowrap dark:text-pg-primary-300')
             ->tbody('text-pg-primary-800')
             ->trBody('border-b border-pg-primary-100 dark:border-pg-primary-600 hover:bg-pg-primary-50 dark:bg-pg-primary-800 dark:hover:bg-pg-primary-700')
-            ->tdBody('p-2 whitespace-nowrap dark:text-pg-primary-200')
+            ->tdBody('p-2 whitespace-nowrap dark:text-pg-primary-200 truncate max-w-[5rem] group-hover:overflow-visible hover:whitespace-normal hover:text-clip hover:bg-white dark:hover:bg-pg-primary-700 hover:shadow-lg hover:absolute hover:z-50 hover:min-w-[5rem]')
             ->tdBodyEmpty('p-2  whitespace-nowrap dark:text-pg-primary-200')
             ->trBodyClassTotalColumns('')
             ->tdBodyTotalColumns('p-2 whitespace-nowrap dark:text-pg-primary-200 text-sm text-pg-primary-600 text-right space-y-2');
