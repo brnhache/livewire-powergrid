@@ -21,24 +21,39 @@ class Tailwind extends ThemeBase
 {
     public string $name = 'tailwind';
 
+    // public function table(): Table
+    // {
+    //     return Theme::table('min-w-full dark:!bg-primary-800')
+    //         ->container('-my-2 overflow-x-auto sm:-mx-3 lg:-mx-8')
+    //         ->base('p-3 align-middle inline-block min-w-full w-full sm:px-6 lg:px-8')
+    //         ->div('rounded-t-lg relative border-x border-t border-pg-primary-200 dark:bg-pg-primary-700 dark:border-pg-primary-600')
+    //         ->thead('shadow-sm rounded-t-lg bg-pg-primary-100 dark:bg-pg-primary-900')
+    //         ->thAction('!font-bold')
+    //         ->tdAction('')
+    //         ->tr('')
+    //         ->trFilters('bg-white shadow-sm dark:bg-pg-primary-800')
+    //         ->th('font-extrabold px-2 pr-4 py-3 text-center text-xs text-pg-primary-700 tracking-wider whitespace-nowrap dark:text-pg-primary-300')
+    //         ->tbody('text-pg-primary-800')
+    //         ->trBody('border-b border-pg-primary-100 dark:border-pg-primary-600 hover:bg-pg-primary-50 dark:bg-pg-primary-800 dark:hover:bg-pg-primary-700')
+    //         ->tdBody('p-2 whitespace-nowrap dark:text-pg-primary-200 truncate max-w-[5rem] group-hover:overflow-visible hover:whitespace-normal hover:text-clip hover:bg-white dark:hover:bg-pg-primary-700 hover:shadow-lg hover:absolute hover:z-50 hover:min-w-[5rem]')
+    //         ->tdBodyEmpty('p-2  whitespace-nowrap dark:text-pg-primary-200')
+    //         ->trBodyClassTotalColumns('')
+    //         ->tdBodyTotalColumns('p-2 whitespace-nowrap dark:text-pg-primary-200 text-sm text-pg-primary-600 text-right space-y-2');
+    // }
     public function table(): Table
     {
-        return Theme::table('min-w-full dark:!bg-primary-800')
-            ->container('-my-2 overflow-x-auto sm:-mx-3 lg:-mx-8')
-            ->base('p-3 align-middle inline-block min-w-full w-full sm:px-6 lg:px-8')
-            ->div('rounded-t-lg relative border-x border-t border-pg-primary-200 dark:bg-pg-primary-700 dark:border-pg-primary-600')
-            ->thead('shadow-sm rounded-t-lg bg-pg-primary-100 dark:bg-pg-primary-900')
+        return Theme::table('min-w-full')
+            ->div('powergrid-table scrollbar-custom')
+            ->thead('sticky top-0 bg-primary-300')
             ->thAction('!font-bold')
-            ->tdAction('')
-            ->tr('')
-            ->trFilters('bg-white shadow-sm dark:bg-pg-primary-800')
-            ->th('font-extrabold px-2 pr-4 py-3 text-center text-xs text-pg-primary-700 tracking-wider whitespace-nowrap dark:text-pg-primary-300')
-            ->tbody('text-pg-primary-800')
-            ->trBody('border-b border-pg-primary-100 dark:border-pg-primary-600 hover:bg-pg-primary-50 dark:bg-pg-primary-800 dark:hover:bg-pg-primary-700')
-            ->tdBody('p-2 whitespace-nowrap dark:text-pg-primary-200 truncate max-w-[5rem] group-hover:overflow-visible hover:whitespace-normal hover:text-clip hover:bg-white dark:hover:bg-pg-primary-700 hover:shadow-lg hover:absolute hover:z-50 hover:min-w-[5rem]')
-            ->tdBodyEmpty('p-2  whitespace-nowrap dark:text-pg-primary-200')
+            ->trFilters('bg-white shadow-sm')
+            ->th('font-extrabold px-4 pr-4 py-3 text-center text-xs text-pg-primary-700 tracking-wider whitespace-nowrap')
+            ->tbody('bg-primary-100 text-pg-primary-800')
+            ->trBody('powergrid-row-border')
+            ->tdBody('px-3 py-2 whitespace-nowrap text-center border')
+            ->tdBodyEmpty('px-3 py-2 whitespace-nowrap')
             ->trBodyClassTotalColumns('')
-            ->tdBodyTotalColumns('p-2 whitespace-nowrap dark:text-pg-primary-200 text-sm text-pg-primary-600 text-right space-y-2');
+            ->tdBodyTotalColumns('px-3 py-2 whitespace-nowrap text-sm text-pg-primary-600 text-right space-y-2');
     }
 
     public function footer(): Footer
