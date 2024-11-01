@@ -73,7 +73,7 @@ class Tailwind extends ThemeBase
     public function cols(): Cols
     {
         return Theme::cols()
-            ->div('select-none flex items-center gap-2')
+            ->div('text-center')
             ->clearFilter('', '');
     }
 
