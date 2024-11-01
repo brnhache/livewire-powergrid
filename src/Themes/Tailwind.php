@@ -58,7 +58,7 @@ class Tailwind extends ThemeBase
     public function cols(): Cols
     {
         return Theme::cols()
-            ->div('text-center')
+            ->div('select-none flex items-center gap-2 truncate hover:text-clip')
             ->clearFilter('', '');
     }
 
