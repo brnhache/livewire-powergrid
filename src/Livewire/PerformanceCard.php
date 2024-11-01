@@ -86,7 +86,7 @@ class PerformanceCard extends \Laravel\Pulse\Livewire\Card
                                     </colgroup>
                                     <x-pulse::thead>
                                         <tr>
-                                            <x-pulse::th class="text-center">Table</x-pulse::th>
+                                            <x-pulse::th class="text-left">Table</x-pulse::th>
                                             <x-pulse::th class="text-right">Time</x-pulse::th>
                                             <x-pulse::th class="text-right">Query Time</x-pulse::th>
                                             <x-pulse::th class="text-right">Total Queries</x-pulse::th>

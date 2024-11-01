@@ -1,14 +1,14 @@
 <div>
     @includeIf(data_get($setUp, 'header.includeViewOnTop'))
-    <div class="text-center">
+    <div class="mb-3 md:flex md:flex-row w-full justify-between items-center">
         <div class="md:flex md:flex-row w-full">
             <div>
                 @include(powerGridThemeRoot() . '.header.actions')
             </div>
-            <div class="text-center">
+            <div class="flex flex-row items-center text-sm flex-wrap">
                 @if (data_get($setUp, 'exportable'))
                     <div
-                        class="mr-2 mt-2 sm:mt-0 text-center"
+                        class="mr-2 mt-2 sm:mt-0"
                         id="pg-header-export"
                     >
                         @include(powerGridThemeRoot() . '.header.export')
