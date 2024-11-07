@@ -41,7 +41,10 @@
         class="{{ data_get($theme, 'checkbox.thClass') }}"
         style="{{ data_get($theme, 'checkbox.thStyle')  }}"
     >
-        <div class="{{ data_get($theme, 'checkbox.divClass') }}">
+    <script>
+        function handleCheckboxClick(event) { console.log('checkbox clicked'); }
+    </script>
+        <div class="{{ data_get($theme, 'checkbox.divClass') }}" @click.stop="handleCheckboxClick">
             <label class="{{ data_get($theme, 'checkbox.labelClass') }}">
                 <input
                     x-data="{}"
