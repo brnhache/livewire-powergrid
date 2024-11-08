@@ -1,6 +1,6 @@
 <div>
     @includeIf(data_get($setUp, 'header.includeViewOnTop'))
-    <div class="mb-3 w-full items-center justify-between md:flex md:flex-row">
+    <div class="mb-1 w-full items-center justify-between md:flex md:flex-row">
         <div class="w-full flex flex-row gap-1">
             @if (data_get($setUp, 'exportable'))
                 <div class="mr-2 mt-2 sm:mt-0" id="pg-header-export">

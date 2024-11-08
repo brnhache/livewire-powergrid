@@ -7,7 +7,7 @@
     </div>
     <div class="flex flex-row justify-center items-center text-sm">
         @if (count($exportOptions) > 0)
-            <div class="mr-2 mt-2 sm:mt-0">
+            <div class="">
                 @include(powerGridThemeRoot() . '.export')
             </div>
         @endif
