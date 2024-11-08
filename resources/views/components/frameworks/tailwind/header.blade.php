@@ -1,7 +1,7 @@
 <div>
     @includeIf(data_get($setUp, 'header.includeViewOnTop'))
-    <div class="mb-3 md:flex md:flex-row w-full justify-between items-center">
-        <div class="md:flex md:flex-row w-full">
+    <div class="mb-3 flex flex-row w-full justify-between items-center">
+        <div class="flex flex-row w-full">
             <div>
                 @include(powerGridThemeRoot() . '.header.actions')
             </div>
