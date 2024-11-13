@@ -15,8 +15,8 @@
             @include(powerGridThemeRoot() . '.header.actions')
         </div>
         @includeWhen(boolval(data_get($setUp, 'header.wireLoading')), powerGridThemeRoot() . '.header.loading')
+        @include(powerGridThemeRoot() . '.header.search')
     </div>
-    @include(powerGridThemeRoot() . '.header.search')
 </div>
 
 @includeIf(powerGridThemeRoot() . '.header.enabled-filters')
