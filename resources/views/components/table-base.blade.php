@@ -23,6 +23,8 @@
                 style="{{  data_get($theme, 'table.tbodyStyle') }}"
             >
                 {{ $body }}
+                @include(powerGridThemeRoot() . '.header.loading')
+
             </tbody>
         @else
             <tbody
