@@ -1,16 +1,16 @@
 <div class="hidden lg:!block relative">
     <div
         wire:loading
-        class="absolute inset-0 flex items-center justify-center backdrop-blur-sm"
+        class="absolute inset-0 flex items-center justify-center"
     >
         <svg
-            class="animate-spin h-8 w-8 text-pg-primary-300 dark:text-pg-primary-400"
+            class="animate-spin h-20 w-20 text-blue-500 dark:text-pg-primary-400"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
         >
             <circle
-                class="opacity-25"
+                class=""
                 cx="12"
                 cy="12"
                 r="10"

@@ -13,9 +13,7 @@
 
 
     <x-slot:body>
-        <x-slot:loading>
-            @include('livewire-powergrid::components.table.tr', ['loading' => true])
-        </x-slot:loading>
+        @include('livewire-powergrid::components.table.tr', ['loading' => true])
         @includeWhen($this->hasColumnFilters, 'livewire-powergrid::components.inline-filters')
 
         @if (is_null($data) || count($data) === 0)
