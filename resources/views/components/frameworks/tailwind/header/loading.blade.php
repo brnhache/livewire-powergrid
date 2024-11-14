@@ -1,10 +1,10 @@
-<div class="hidden lg:!block">
+<div class="hidden lg:!block relative">
     <div
         wire:loading
-        class="mt-2 hidden"
+        class="absolute inset-0 flex items-center justify-center backdrop-blur-sm"
     >
         <svg
-            class="animate-spin h-5 w-5 text-pg-primary-300 dark:text-pg-primary-400"
+            class="animate-spin h-8 w-8 text-pg-primary-300 dark:text-pg-primary-400"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
