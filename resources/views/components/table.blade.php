@@ -59,6 +59,8 @@
                             {{ $trAttributesBag }}
                             x-data="{ detailState: @entangle('setUp.detail.state.' . $rowId) }"
                         >
+                            @include(powerGridThemeRoot() . '.header.loading')
+
                             @include('livewire-powergrid::components.row', [
                                 'rowIndex' => $loop->index + 1,
                             ])
