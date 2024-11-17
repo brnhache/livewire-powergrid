@@ -11,9 +11,9 @@
         @include('livewire-powergrid::components.table.tr')
     </x-slot:header>
 
-    {{-- <x-slot:loading>
+    <x-slot:loading>
         @include('livewire-powergrid::components.table.tr', ['loading' => true])
-    </x-slot:loading> --}}
+    </x-slot:loading>
 
     <x-slot:body>
         @includeWhen($this->hasColumnFilters, 'livewire-powergrid::components.inline-filters')
