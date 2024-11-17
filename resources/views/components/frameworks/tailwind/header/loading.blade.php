@@ -1,4 +1,4 @@
-<div class="hidden lg:!block relative">
+<div class="fixed inset-0 flex items-center justify-center z-50">
     <div
         wire:loading
         class="absolute inset-0 flex items-center justify-center"
