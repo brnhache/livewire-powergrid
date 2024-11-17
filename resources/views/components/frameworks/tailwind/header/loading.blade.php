@@ -1,6 +1,6 @@
 <div class="fixed inset-0 flex items-center justify-center z-50">
     <div
-        wire:loading
+        {{-- wire:loading --}}
         class="absolute inset-0 flex items-center justify-center"
     >
         <svg
