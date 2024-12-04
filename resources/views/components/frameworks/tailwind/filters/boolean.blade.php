@@ -43,7 +43,7 @@
         @endif
         <div class="relative">
             <select
-                class="{{ $selectClasses }}"
+                class="{{ $selectClasses }} z-0"
                 style="{{ data_get($column, 'headerStyle') }}"
                 {{ $defaultAttributes['selectAttributes'] }}
             >
