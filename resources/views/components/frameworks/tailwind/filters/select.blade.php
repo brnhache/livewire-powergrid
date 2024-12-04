@@ -40,7 +40,7 @@
                 {{ $title }}
             </label>
         @endif
-        <div class="relative">
+        <div>
             <select
                 class="{{ $filterClasses }}"
                 style="{{ data_get($column, 'headerStyle') }}"
