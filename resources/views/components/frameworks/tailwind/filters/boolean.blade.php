@@ -41,9 +41,9 @@
                 {{ $title }}
             </label>
         @endif
-        <div class="relative">
+        <div>
             <select
-                class="{{ $selectClasses }} z-0"
+                class="{{ $selectClasses }}"
                 style="{{ data_get($column, 'headerStyle') }}"
                 {{ $defaultAttributes['selectAttributes'] }}
             >
