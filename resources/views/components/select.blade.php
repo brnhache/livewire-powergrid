@@ -4,7 +4,7 @@
     'empty' => null,
     'theme' => null,
 ])
-<div class="relative">
+<div>
     <select>
         <option value="">{{ $empty }}</option>
         @foreach ($data as $value => $label)
