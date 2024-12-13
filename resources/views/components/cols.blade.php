@@ -25,6 +25,7 @@
         : null;
 @endphp
 <th
+    x-sort:item
     @if ($sortOrder) sort_order="{{ $sortOrder }}" @endif
     class="{{ data_get($theme, 'table.thClass') . ' ' . $column->headerClass }}"
     @if ($isFixedOnResponsive) fixed @endif

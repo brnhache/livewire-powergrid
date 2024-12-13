@@ -53,6 +53,7 @@
 
         @foreach ($columns as $column)
             <x-livewire-powergrid::cols
+                x-sort
                 wire:key="cols-{{ $column->field }} }}"
                 :column="$column"
                 :theme="$theme"
