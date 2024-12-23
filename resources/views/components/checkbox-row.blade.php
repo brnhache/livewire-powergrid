@@ -40,8 +40,9 @@
     <td
         class="{{ data_get($theme, 'checkbox.thClass') }}"
         style="{{ data_get($theme, 'checkbox.thStyle')  }}"
+        @click.stop="$dispatch('handleCheckboxClick')"
     >
-        <div class="{{ data_get($theme, 'checkbox.divClass') }}" @click.stop="$dispatch('handleCheckboxClick')">
+        <div class="{{ data_get($theme, 'checkbox.divClass') }}" >
             <label class="{{ data_get($theme, 'checkbox.labelClass') }}">
                 <input
                     x-data="{}"
@@ -50,6 +51,7 @@
                     x-on:click="window.Alpine.store('pgBulkActions').add($event.target.value, '{{ $tableName }}')"
                     wire:model="checkboxValues"
                     value="{{ $attribute }}"
+                    style="width: 1.5rem; height: 1.5rem;"
                 >
             </label>
         </div>
